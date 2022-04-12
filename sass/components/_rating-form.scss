@@ -4,10 +4,10 @@
   background-color: $color-neutral-blue-dark;
 
   border-radius: 1.6rem;
-  max-width: 35rem;
+  width: 35rem;
 
   @include respond(galaxy-fold) {
-    max-width: 25rem;
+    width: 25rem;
   }
 
   &__initial {
