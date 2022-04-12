@@ -1,23 +1,6 @@
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media screen and (max-width: $mobile) {
-      @content;
-    }
-  }
-  @if $breakpoint == tab-port {
-    @media screen and (max-width: $tab-port) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == tab-land {
-    @media screen and (max-width: $tab-land) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == desktop {
-    @media screen and (min-width: $desktop) {
+  @if $breakpoint == galaxy-fold {
+    @media screen and (max-width: $galaxy-fold) {
       @content;
     }
   }

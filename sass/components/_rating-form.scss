@@ -4,18 +4,10 @@
   background-color: $color-neutral-blue-dark;
 
   border-radius: 1.6rem;
+  max-width: 35rem;
 
-  @include respond(tab-land) {
-    width: 40%;
-  }
-  @include respond(tab-port) {
-    width: 60%;
-  }
-  @include respond(phone) {
-    width: 90%;
-  }
-  @include respond(desktop) {
-    width: 18%;
+  @include respond(galaxy-fold) {
+    max-width: 25rem;
   }
 
   &__initial {
@@ -43,6 +35,10 @@
     width: 100%;
     padding: 1rem;
     margin-block: 1.6rem;
+
+    @include respond(galaxy-fold) {
+      padding: 0;
+    }
   }
 
   &__label {
@@ -58,6 +54,10 @@
 
     &:not(:last-child) {
       margin-right: 6rem;
+
+      @include respond(galaxy-fold) {
+        margin-right: 4.5rem;
+      }
     }
 
     input {
