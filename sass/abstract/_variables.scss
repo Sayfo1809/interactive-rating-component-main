@@ -1,0 +1,27 @@
+/* Colors */
+/* Primary*/
+$color-primary-orange: hsl(25, 97%, 53%);
+
+/* Neutral */
+$color-neutral-white: hsl(0, 0%, 100%);
+$color-neutral-grey-light: hsl(217, 12%, 63%);
+$color-neutral-grey-medium: hsl(216, 12%, 54%);
+$color-neutral-blue-dark: hsl(213, 19%, 18%);
+$color-neutral-blue-vDark: hsl(216, 12%, 8%);
+
+/* Typography */
+/* Body text */
+$font-paragraph: 1.5rem;
+
+/* Primary font */
+$font-primary: "Overpass", sans-serif;
+
+/* Font weights */
+$font-regular: 400;
+$font-bold: 700;
+
+/* Breakpoints */
+$mobile: 25em;
+$tab-port: 50em;
+$tab-land: 75em;
+$desktop: 90em;

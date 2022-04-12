@@ -1,0 +1,118 @@
+.rating-form {
+  padding: 2rem;
+
+  background-color: $color-neutral-blue-dark;
+
+  border-radius: 1.6rem;
+
+  @include respond(tab-land) {
+    width: 40%;
+  }
+  @include respond(tab-port) {
+    width: 60%;
+  }
+  @include respond(phone) {
+    width: 90%;
+  }
+  @include respond(desktop) {
+    width: 18%;
+  }
+
+  &__initial {
+    display: none;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon-wrapper,
+  &__radio {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100px;
+    background-color: rgba($color-neutral-grey-light, 0.08);
+  }
+
+  &__ratings {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    margin-block: 1.6rem;
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: $color-neutral-white;
+    user-select: none;
+
+    &:hover > .rating-form__radio {
+      background-color: $color-primary-orange;
+    }
+
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked ~ .rating-form__radio {
+        background-color: lighten($color-neutral-grey-light, 9%);
+      }
+    }
+  }
+
+  &__radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__rating-text {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+  }
+
+  .btn {
+    margin-top: 5rem;
+  }
+
+  // Final state
+  &__final {
+    display: none;
+    align-items: center;
+
+    &-text {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__outcome {
+    color: lighten($color-primary-orange, 18%);
+    background-color: rgba($color-neutral-grey-light, 0.08);
+    border-radius: 100px;
+    width: fit-content;
+    padding-inline: 1rem;
+    padding-block: 0.3rem;
+  }
+
+  &__image-wrapper {
+    margin-block: 1.6rem;
+  }
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}

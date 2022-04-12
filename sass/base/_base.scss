@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $font-paragraph;
+  color: $color-neutral-grey-light;
+  background-color: $color-neutral-blue-vDark;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 10vh;
+  background-color: $color-neutral-blue-dark;
+  text-align: center;
+
+  @include respond(desktop) {
+    padding: 4vh;
+  }
+
+  @include respond(tab-land) {
+    padding: 1rem;
+  }
+
+  color: $color-neutral-white;
+
+  a {
+    color: darken($color-neutral-white, 25%);
+  }
+}

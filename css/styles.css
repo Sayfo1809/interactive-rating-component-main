@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/* Colors */
+/* Primary*/
+/* Neutral */
+/* Typography */
+/* Body text */
+/* Primary font */
+/* Font weights */
+/* Breakpoints */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  color: #959eac;
+  background-color: #121417;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 10vh;
+  background-color: #252d37;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width: 90em) {
+  .footer {
+    padding: 4vh;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  .footer {
+    padding: 1rem;
+  }
+}
+
+.footer a {
+  color: #bfbfbf;
+}
+
+.heading-2 {
+  font-size: 2.3rem;
+  color: white;
+  margin-block: 1.6rem;
+  font-weight: 700;
+}
+
+.btn {
+  padding-block: 1.6rem;
+  border-radius: 100px;
+  width: 100%;
+  background-color: #fb7413;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+button.btn {
+  border: none;
+}
+
+.rating-form {
+  padding: 2rem;
+  background-color: #252d37;
+  border-radius: 1.6rem;
+}
+
+@media screen and (max-width: 75em) {
+  .rating-form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .rating-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .rating-form {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .rating-form {
+    width: 18%;
+  }
+}
+
+.rating-form__initial {
+  display: none;
+  flex-direction: column;
+  position: relative;
+}
+
+.rating-form__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-form__icon-wrapper, .rating-form__radio {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px;
+  background-color: rgba(149, 158, 172, 0.08);
+}
+
+.rating-form__ratings {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  margin-block: 1.6rem;
+}
+
+.rating-form__label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+
+.rating-form__label:hover > .rating-form__radio {
+  background-color: #fb7413;
+}
+
+.rating-form__label:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.rating-form__label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rating-form__label input:checked ~ .rating-form__radio {
+  background-color: #afb6c0;
+}
+
+.rating-form__radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rating-form__rating-text {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.rating-form .btn {
+  margin-top: 5rem;
+}
+
+.rating-form__final {
+  display: none;
+  align-items: center;
+}
+
+.rating-form__final-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rating-form__outcome {
+  color: #fda96d;
+  background-color: rgba(149, 158, 172, 0.08);
+  border-radius: 100px;
+  width: fit-content;
+  padding-inline: 1rem;
+  padding-block: 0.3rem;
+}
+
+.rating-form__image-wrapper {
+  margin-block: 1.6rem;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}

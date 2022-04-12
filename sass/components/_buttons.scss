@@ -1,0 +1,20 @@
+.btn {
+  padding-block: 1.6rem;
+  border-radius: 100px;
+  width: 100%;
+  background-color: $color-primary-orange;
+  color: $color-neutral-white;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: $font-regular;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-neutral-white;
+    color: $color-primary-orange;
+  }
+}
+
+button.btn {
+  border: none;
+}
